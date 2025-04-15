@@ -20,6 +20,9 @@ def number_guessing_game():
             else:
                 ih_baga = "их"
             print(f"Таны оруулсан тоо {ih_baga} байна.")
+            if oroldlogiin_too == 10:
+                print('-------------')
+                print("Та хожигдлоо")
 
 # Start the game
 
