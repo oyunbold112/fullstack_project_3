@@ -1,12 +1,13 @@
 import random
 
-def number_guessing_game():
+def number_guessing_game(end):
     print("Тоо таах тоглоомд тавтай морил!")
     print("1-ээс 10 хүртэлх тоог таахыг оролдоорой.")
     # taalgah too
-    too = random.randint(1, 10)
+    start = 1
+    too = random.randint(1, end)
 
-    for oroldlogiin_too in range(1,11):
+    for oroldlogiin_too in range(1,end + 1):
         #Toog garaas awah
         oroldlogo = int(input("Та тоогоо оруулна уу: "))
     
@@ -26,4 +27,4 @@ def number_guessing_game():
 
 # Start the game
 
-number_guessing_game()
+number_guessing_game(10)
